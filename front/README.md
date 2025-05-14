@@ -15,12 +15,12 @@ Clona este repositorio (si no lo has hecho ya como parte del proyecto completo):
 
 git clone https://github.com/undrbug/challenge-ForIT-Front.git
 
-cd challenge-ForIT-Front.git 
+cd challenge-ForIT-Front.git/front 
 
 Instala las dependencias del proyecto:
 
 npm install
-# o si usas yarn
+# usando yarn
 yarn install
 
 Crea un archivo .env en la raíz del directorio del frontend. Este archivo es crucial para configurar la URL de la API backend. Añade la siguiente línea:
@@ -33,7 +33,7 @@ Ejecución de la Aplicación
 Una vez que hayas completado los pasos de instalación y te hayas asegurado de que el backend está corriendo y la variable VITE_API_URL en tu .env es correcta, puedes iniciar el servidor de desarrollo del frontend:
 
 npm run dev
-# o si usas yarn
+# usando yarn
 yarn dev
 
 El servidor de desarrollo de Vite se iniciará y generalmente estará disponible en http://localhost:5173 (o un puerto similar si el 5173 ya está en uso). La consola te indicará la URL exacta.
@@ -53,7 +53,7 @@ Construcción para Producción
 Para generar una versión optimizada del frontend para despliegue en un servidor web, puedes usar el siguiente comando:
 
 npm run build
-# o si usas yarn
+# con yarn
 yarn build
 
 Esto creará una carpeta dist (o similar, dependiendo de la configuración de Vite) en la raíz del proyecto, conteniendo los archivos estáticos (HTML, CSS, JavaScript, etc.) listos para ser servidos.
@@ -61,5 +61,5 @@ Esto creará una carpeta dist (o similar, dependiendo de la configuración de Vi
 Puedes previsualizar la construcción localmente con:
 
 npm run preview
-# o si usas yarn
+
 yarn preview
