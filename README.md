@@ -180,6 +180,7 @@ JSON
 }
 Notas Importantes
 Esta aplicación almacena las tareas en un array en memoria. Esto significa que todas las tareas se perderán cada vez que reinicies el servidor. Si necesitas persisitencia de datos, necesitas integrar un db como Mongodb, MySQL, etc...
+```
 
 # Front Gestión de Tareas (TODO)
 
