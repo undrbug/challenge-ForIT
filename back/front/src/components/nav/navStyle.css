@@ -1,0 +1,39 @@
+/* estilos para un navbar */
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+}
+
+.navbar__logo img {
+    height: 100%;
+    max-height: 50px;
+    margin-right: 1rem;
+}
+
+.navbar__links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.navbar__links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__links a:hover {
+    background-color: #555;
+}
+
+.navbar__links a.active {
+    background-color: #555;
+}
