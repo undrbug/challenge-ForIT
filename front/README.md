@@ -1,3 +1,5 @@
+# Front Gestión de Tareas (TODO)
+
 Frontend: Interfaz de Usuario para el Gestor de Tareas
 Este proyecto es el frontend de una aplicación para gestionar tareas, construida con React y Vite. Se comunica con una API backend para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las tareas.
 
@@ -19,9 +21,7 @@ cd challenge-ForIT-Front.git/front
 
 Instala las dependencias del proyecto:
 
-npm install
-# usando yarn
-yarn install
+npm install o yarn install
 
 Crea un archivo .env en la raíz del directorio del frontend. Este archivo es crucial para configurar la URL de la API backend. Añade la siguiente línea:
 
@@ -32,9 +32,7 @@ Importante: Asegúrate de que esta URL coincide con la dirección y puerto donde
 Ejecución de la Aplicación
 Una vez que hayas completado los pasos de instalación y te hayas asegurado de que el backend está corriendo y la variable VITE_API_URL en tu .env es correcta, puedes iniciar el servidor de desarrollo del frontend:
 
-npm run dev
-# usando yarn
-yarn dev
+npm run dev o yarn dev
 
 El servidor de desarrollo de Vite se iniciará y generalmente estará disponible en http://localhost:5173 (o un puerto similar si el 5173 ya está en uso). La consola te indicará la URL exacta.
 
@@ -52,14 +50,10 @@ La aplicación frontend utiliza react-router-dom para manejar la navegación y t
 Construcción para Producción
 Para generar una versión optimizada del frontend para despliegue en un servidor web, puedes usar el siguiente comando:
 
-npm run build
-# con yarn
-yarn build
+npm run build o yarn build
 
 Esto creará una carpeta dist (o similar, dependiendo de la configuración de Vite) en la raíz del proyecto, conteniendo los archivos estáticos (HTML, CSS, JavaScript, etc.) listos para ser servidos.
 
 Puedes previsualizar la construcción localmente con:
 
-npm run preview
-
-yarn preview
+npm run preview o yarn preview
