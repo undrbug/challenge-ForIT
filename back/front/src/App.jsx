@@ -1,30 +1,23 @@
-import { useState } from 'react'
 import NavBar from './components/nav/NavBar.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import TaskList from './components/taskList/TaskList.jsx'
+import TaskForm from './components/taskForm/TaskForm.jsx'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <BrowserRouter>
       <NavBar />
-
-      <div>
-      <h1>hola</h1>
+      <div className="container">
+        <h1>Gestor de tareas</h1>
+        <Routes>
+          <Route path="/" element={<TaskList />} />
+          <Route path="/create" element={<TaskForm />} />
+          <Route path="/edit/:id" element={<TaskForm />} />
+        </Routes>
       </div>
-      <h1>ss</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          -{count}-
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </BrowserRouter>
   )
 }
 
