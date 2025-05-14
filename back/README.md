@@ -18,20 +18,18 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 * [Node.js]
 * [npm]
 
-## Instalación
-
 Sigue estos pasos para configurar y ejecutar el proyecto localmente:
 
 1.  Clona este repositorio:
     ```bash
     git clone https://github.com/undrbug/challenge-ForIT-Back.git
-    cd challenge-ForIT-Back
+    cd challenge-ForIT-Back/back
     ```
 
 2.  Instala las dependencias del proyecto:
     ```bash
     npm install
-    # o si usas yarn
+    # con yarn
     yarn install
     ```
 
@@ -47,7 +45,7 @@ Una vez que hayas completado los pasos de instalación, puedes iniciar el servid
 
 ```bash
 npm start
-# o si usas yarn
+# usando yarn
 yarn start
 Verás un mensaje en la consola indicando que el servidor está corriendo, por ejemplo:
 
